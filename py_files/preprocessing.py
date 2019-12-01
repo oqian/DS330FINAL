@@ -97,14 +97,6 @@ if __name__ == '__main__':
     clean_review(raw_file_path='/home/karen/workspace/ABSA_glassdoor/dataset/employee_reviews.csv',
                  save_file_path='/home/karen/workspace/ABSA_glassdoor/ABSA_LSTM_pt_update/employee_reviews_cleaned.csv')
 
-    # df = pd.read_csv('/opt/lampp/htdocs/DS330/final/dataset/employee_review_updated.csv')
-    # df[df['company'] == 'google'].to_csv('google.csv', index=False)
-    # df[df['company'] == 'amazon'].to_csv('amazon.csv', index=False)
-    # df[df['company'] == 'microsoft'].to_csv('microsoft.csv', index=False)
-    # df[df['company'] == 'facebook'].to_csv('facebook.csv', index=False)
-    # df[df['company'] == 'apple'].to_csv('apple.csv', index=False)
-    # df[df['company'] == 'netflix'].to_csv('netflix.csv', index=False)
-
     # get_lat_long(src_file_path='locations.csv',
     #              tgt_file_path='locations_lat_lng.csv')
     update_lat_lng(src_file_path='/home/karen/workspace/ABSA_glassdoor/ABSA_LSTM_pt_update/employee_reviews_cleaned.csv',
