@@ -27,8 +27,8 @@ require('../control/api.php');
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
 
-<div class="right_col" role="main" style="margin-left: 250px; height: 90%">
-    <div class="row" style="display: inline-block;">
+<div class="right_col" role="main" style="margin-left: 250px; height: 90%; background-color: #F7F7F7;">
+    <div class="row" style="margin-left: 20px; display: inline-block;">
         <div class="company">
             <div class="tile_count">
                 <div class="col-md-2 col-sm-4">
@@ -53,7 +53,7 @@ require('../control/api.php');
                     </button>
                 </div>
                 <div class="col-md-2 col-sm-4">
-                    <button style="width: 110%" type="button" class="btn btn-outline-light" value="facebook">Facebook
+                    <button style="width: 110%" type="button" class="btn btn-outline-dark" value="facebook">Facebook
                     </button>
                 </div>
             </div>

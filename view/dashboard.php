@@ -55,18 +55,18 @@ function DECtoDMS($latitude, $longitude)
 <link rel="stylesheet" type="text/css" href="../css_files/style.css">
 <link rel="stylesheet" type="text/css" href="../css_files/dataTables.bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../css_files/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="../css_files/custom.min.css">
 <link rel="stylesheet" type="text/css" href="../css_files/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="../css_files/nprogress.css">
+<link rel="stylesheet" type="text/css" href="../css_files/custom.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
-<div class="right_col" role="main" style="margin-left: 250px; margin-top: 20px; height: 90%">
-    <div class="row" style="display: inline-block;">
+<div class="right_col" role="main" style="margin-left: 250px; margin-top: 20px; height: 90%; background-color: #F7F7F7">
+    <div class="row" style="display: inline-block; background-color: #F7F7F7">
     </div>
 
     <div class="row">
-        <div class="col-md-11 col-sm-11">
+        <div class="col-md-11 col-sm-11" style="margin-left: 40px; background-color: #F7F7F7">
             <div class="dashboard_graph">
 
                 <div class="row x_title">
@@ -75,8 +75,8 @@ function DECtoDMS($latitude, $longitude)
                     </div>
                 </div>
 
-                <div class="col-md-9 col-sm-9 ">
-                    <div id="chart_plot_01" class="demo-placeholder" style="height: 500px;">
+                <div class="col-md-11 col-sm-11 " style="margin-left: 25px; background-color: #F7F7F7">
+                    <div id="chart_plot_01" class="demo-placeholder" style="width: 1400px; height: 500px;">
                         <div id="line_plot"></div>
                     </div>
                 </div>
@@ -89,8 +89,8 @@ function DECtoDMS($latitude, $longitude)
     <br/>
 
 
-    <div class="row">
-        <div class="col-md-4 col-sm-4 ">
+    <div class="row" style="margin-left: 0px; margin-right: 0px; background-color: #F7F7F7">
+        <div class="col-md-4 col-sm-4 " style="margin-left: 40px; background-color: #F7F7F7">
             <div class="x_panel">
                 <div class="x_title">
                     <div id="text_sample" style="width: 100%"></div>
@@ -100,11 +100,11 @@ function DECtoDMS($latitude, $longitude)
         </div>
 
 
-        <div class="col-md-8 col-sm-8 ">
+        <div class="col-md-7 col-sm-7" style="margin-left: 10px; background-color: #F7F7F7">
 
             <div class="row">
 
-                <div class="col-md-11 col-sm-11">
+                <div class="col-md-12 col-sm-12" style="background-color: #F7F7F7">
                     <div class="x_panel">
                         <div class="x_title">
                             <input style="width: 15%; font-size: xx-small; text-align: center" type="button"
@@ -132,7 +132,7 @@ function DECtoDMS($latitude, $longitude)
 
 
                 <!-- Start to do list -->
-                <div class="col-md-11 col-sm-11">
+                <div class="col-md-12 col-sm-12">
                     <div class="x_panel">
                         <div class="x_title">
                             <div id="wordcloud_plot"></div>

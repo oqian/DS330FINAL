@@ -63,7 +63,11 @@ function update(which_rating, which_rating_formal, lat, long, company) {
         g.append("path")
             .attr("d", arc)
             .attr("fill", function (d, i) {
-                return color(i);
+                console.log(d.data.rating, i,
+                    parseInt(d.data.rating.split(" ", 1))-1,
+                    color(parseInt(d.data.rating.split(" ", 1))-1));
+                console.log(color(0), color(1), color(2))
+                return color(parseInt(d.data.rating.split(" ", 1))-1);
             })
             .transition()
             .ease("elastic")
@@ -77,10 +81,10 @@ function update(which_rating, which_rating_formal, lat, long, company) {
                 return d.data.rating;
             })
             .attr("data-legend-pos", function (d, i) {
-                return i;
+                return color(parseInt(d.data.rating.split(" ", 1))-1);
             })
             .style("fill", function (d) {
-                return color(d.data.rating);
+                return color(parseInt(d.data.rating.split(" ", 1))-1);
             });
 
         g.append("text")

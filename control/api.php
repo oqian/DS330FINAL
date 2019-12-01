@@ -15,7 +15,7 @@ function plot_map($company) {
        latitude, longitude from employee_review
        WHERE company='$company'
        ORDER BY rand()
-        LIMIT 5;
+        LIMIT 20;
         ";
 
     $result_set = mysqli_query($con, $query);
@@ -78,7 +78,7 @@ function extract_raw_reviews($lat, $long, $company) {
               AND abs(longitude-$long)<0.001
               AND company='$company'
         ORDER BY rand()
-        LIMIT 15
+        LIMIT 20
         ";
     $result_set = mysqli_query($con, $query);
     $data = array();
